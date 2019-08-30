@@ -88,3 +88,16 @@ Run py file and verify in mysql command line that data is added.
     cursor.execute("UPDATE Friends SET age = %s WHERE name = %s;",
                     (23, 'Bob'))
 
+## Use String Interpolation as an alternative Update Many method
+
+Create list of tuples eg:
+
+        rows = [(44, 'Bob'),
+                 (13, 'Luke'),
+                  (13, 'Leia')]
+
+Then use following syntax to update many rows:
+
+    cursor.executemany("UPDATE Friends SET age = %s WHERE name = %s;", rows)
+
+
