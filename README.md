@@ -10,7 +10,8 @@
 * Gitpod
 
 ## Developer Aims
-* Learn how to manipulate MySql data using Python
+* Learn how to manipulate MySql data using Python:
+* Cursors
 
 ## Learning Process Documentation:
 
@@ -32,4 +33,9 @@ Chinook_MySql_AutoIncrementPKs.sql -v
 
 pip3 freeze > requirements.txt
 
-git rm -r --cached Chinook_MySql_AutoIncrementPKs.sql rm 'Chinook_MySql_AutoIncrementPKs.sql'
+echo '*.sql' >> .gitignore
+
+
+- Created cursor and then use the cursor to execute queries.
+- Use for to print rows
+- Depending on type of cursor used, result can be a Tuple or a Dictionary etc.
