@@ -78,6 +78,11 @@ Run py file and verify in mysql command line that data is added.
 
 ## Update rows
 
-    cursor.execute("UPDATE Friends SET age = 22 WHERE name = 'Bob')
+    cursor.execute("UPDATE Friends SET age = 22 WHERE name = 'Bob';")
+
+Run py file and verify in mysql command line that data is added.
+
+
+
 
 
