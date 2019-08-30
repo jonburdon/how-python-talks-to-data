@@ -1,7 +1,16 @@
-# Code Institute
+# How Python talks to data
 
-Welcome USER_NAME,
+## Learning project following Code Institute Tutorials
 
-We have preinstalled all of the tools you need to get started.
+### This file documents the learning covered, with examples and reminder resources.
 
-Happy coding!
+## Technologies
+* Python
+* MySql
+* Gitpod
+
+## Developer Aims
+* Learn how to manipulate MySql data using Python
+
+## Learning Process Documentation:
+
