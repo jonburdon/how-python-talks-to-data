@@ -27,13 +27,13 @@ Use pip3 install pymysql to install pymysql library
 
 Grab data from github.
 
-wget https://raw.githubusercontent.com/lerocha/chinook-database/master/ChinookDatabase/DataSources/Chinook_MySql_AutoIncrementPKs.sql
+    wget https://raw.githubusercontent.com/lerocha/chinook-database/master/ChinookDatabase/DataSources/Chinook_MySql_AutoIncrementPKs.sql
 
-Chinook_MySql_AutoIncrementPKs.sql -v
+    Chinook_MySql_AutoIncrementPKs.sql -v
 
-pip3 freeze > requirements.txt
+    pip3 freeze > requirements.txt
 
-echo '*.sql' >> .gitignore
+    echo '*.sql' >> .gitignore
 
 ### Using a cursor
 
@@ -58,9 +58,8 @@ import datetime in mysql-from-python.py
 
 Create tuple for readability. See line 16: row = ("Bob", 21, "1990-02-06 23:04:56")
 
-cursor.execute("INSERT INTO Friends VALUES (%s, %s, %s);", row)
-
-connection.commit()
+    cursor.execute("INSERT INTO Friends VALUES (%s, %s, %s);", row)
+    connection.commit()
 
 Run new py file from terminal.
 Use mysql command line to verify Bob row has been added.
