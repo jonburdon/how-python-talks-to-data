@@ -63,3 +63,21 @@ Create tuple for readability. See line 16: row = ("Bob", 21, "1990-02-06 23:04:5
 
 Run new py file from terminal.
 Use mysql command line to verify Bob row has been added.
+
+## Execute many - used to execute multiple mysql statements.
+
+- Example would be to insert many rows at once.
+
+Changed rows variable to be a list of tuples with row data to be added.
+
+Change syntax to:
+
+    cursor.executemany("INSERT INTO Friends VALUES (%s, %s, %s);", rows)
+
+Run py file and verify in mysql command line that data is added.
+
+## Update rows
+
+    cursor.execute("UPDATE Friends SET age = 22 WHERE name = 'Bob')
+
+
