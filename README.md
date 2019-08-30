@@ -83,6 +83,8 @@ Run py file and verify in mysql command line that data is added.
 Run py file and verify in mysql command line that data is added.
 
 
+## Use String Interpolation as an alternative Update method
 
-
+    cursor.execute("UPDATE Friends SET age = %s WHERE name = %s;",
+                    (23, 'Bob'))
 
